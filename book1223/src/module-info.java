@@ -1,0 +1,2 @@
+module book1223 {
+}
