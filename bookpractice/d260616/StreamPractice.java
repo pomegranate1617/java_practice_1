@@ -24,7 +24,7 @@ public class StreamPractice {
 		//mapToInt없이 하면 Integer타입이라 toArray()가 Object타입으로만 반환
 		//toArray(int[] :: new)나(기본타입은 객체생성 불가)
 		//toArray(Integer[] :: new)같은거는 없음. =>가능 포장객체등등 객체타입으로 선언한 배열은 참조타입이므로 new로 객체 생성가능
-		// 가능. Integer[]는 참조형 배열이며 배열도 객체이므로
+		// Integer[]는 참조형 배열이며 배열도 객체이므로
 		// Integer[]::new 형태의 생성자 참조를 사용할 수 있음.
 		int[] evenArr = nums.stream().filter(num -> num % 2 == 0)
 							.mapToInt(Integer :: intValue).toArray();
